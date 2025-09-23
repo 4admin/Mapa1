@@ -1,0 +1,341 @@
+      <div class="lfr-layout-structure-item-basic-component-spacer lfr-layout-structure-item-015da5b2-539e-a835-0235-318d36377842 ">
+       <div id="fragment-108218cd-7665-ced7-d543-0be6fe3cbd82">
+        <div class="py-3"></div>
+       </div>
+      </div>
+      <div class="lfr-layout-structure-item-t-tulo-de-se--o lfr-layout-structure-item-1136c6e8-d7eb-44d1-77c6-5cb538a43f3b ">
+       <div id="fragment-9b3e7123-1340-a775-16d3-d2b6834f7bc1">
+        <div class="psp-section-title">
+         <div class="psp-section-title__main mr-5">
+          <div class="psp-section-title__text text-6 font-weight-semi-bold">
+           <div data-lfr-editable-id="text" data-lfr-editable-type="rich-text">
+            <p>Interlagos em Números</p>
+           </div>
+          </div>
+         </div>
+         <div class="psp-section-title__divider d-none d-sm-block"></div>
+        </div>
+       </div>
+      </div>
+      <div class="lfr-layout-structure-item-basic-component-html lfr-layout-structure-item-7cb1a254-2f60-0a0d-20c1-2e9a70e57879 ">
+       <div id="fragment-2db53443-620f-9125-8a19-dc57524795ff">
+        <div class="component-html" data-lfr-editable-id="element-html" data-lfr-editable-type="html">
+         <div class="interlagos-stats-container">
+          <div class="interlagos-stats-card">
+           <div class="interlagos-stats-icon">
+            🏁
+           </div>
+           <div class="interlagos-stats-value" id="pista">
+            1.642m
+           </div>
+           <div class="interlagos-stats-label">
+            Extensão da pista
+           </div>
+          </div>
+          <div class="interlagos-stats-card">
+           <div class="interlagos-stats-icon">
+            🔄
+           </div>
+           <div class="interlagos-stats-value" id="curvas">
+            5
+           </div>
+           <div class="interlagos-stats-label">
+            Curvas
+           </div>
+          </div>
+          <div class="interlagos-stats-card">
+           <div class="interlagos-stats-icon">
+            📅
+           </div>
+           <div class="interlagos-stats-value" id="fundacao">
+            739
+           </div>
+           <div class="interlagos-stats-label">
+            Ano de fundação
+           </div>
+          </div>
+          <div class="interlagos-stats-card">
+           <div class="interlagos-stats-icon">
+            👥
+           </div>
+           <div class="interlagos-stats-value" id="capacidade">
+            22K
+           </div>
+           <div class="interlagos-stats-label">
+            Capacidade
+           </div>
+          </div>
+         </div>
+         <style>
+  .interlagos-stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 55px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .interlagos-stats-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .interlagos-stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #01B8FB, #0079A5);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .interlagos-stats-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .interlagos-stats-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .interlagos-stats-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .interlagos-stats-value {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #01B8FB !important;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .interlagos-stats-label {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  /* Grid responsivo */
+  @media (max-width: 1024px) {
+    .interlagos-stats-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .interlagos-stats-container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+    }
+
+    .interlagos-stats-card {
+      padding: 20px 15px;
+    }
+
+    .interlagos-stats-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .interlagos-stats-value {
+      font-size: 2.5rem;
+    }
+
+    .interlagos-stats-label {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .interlagos-stats-container {
+      grid-template-columns: 1fr;
+    }
+
+    .interlagos-stats-card {
+      padding: 25px 20px;
+    }
+  }
+
+  /* Animação de entrada */
+  .interlagos-stats-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+
+  .interlagos-stats-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .interlagos-stats-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .interlagos-stats-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .interlagos-stats-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .interlagos-stats-card:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+         <script type="">
+        (function() {
+            'use strict';
+
+            const contadores = {
+                pista: { 
+                    valor: 4309, 
+                    formato: (val) => val.toLocaleString('pt-BR') + 'm',
+                    decimal: 0
+                },
+                curvas: { 
+                    valor: 15, 
+                    formato: (val) => val,
+                    decimal: 0
+                },
+                fundacao: { 
+                    valor: 1940, 
+                    formato: (val) => val,
+                    decimal: 0
+                },
+                capacidade: { 
+                    valor: 60, 
+                    formato: (val) => val + 'K',
+                    decimal: 0
+                }
+            };
+
+            const animationDuration = 2500;
+            const fps = 60;
+            const frameDuration = 1000 / fps;
+
+            function easeOutCubic(t) {
+                return 1 - Math.pow(1 - t, 3);
+            }
+
+            function animateCounter(id, config) {
+                const element = document.getElementById(id);
+                if (!element) return;
+
+                const startTime = performance.now();
+                let lastFrameTime = startTime;
+
+                function updateCounter(currentTime) {
+                    // Limitar FPS
+                    if (currentTime - lastFrameTime < frameDuration) {
+                        requestAnimationFrame(updateCounter);
+                        return;
+                    }
+                    lastFrameTime = currentTime;
+
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / animationDuration, 1);
+                    const easedProgress = easeOutCubic(progress);
+                    
+                    const currentValue = config.valor * easedProgress;
+                    
+                    if (config.decimal > 0) {
+                        element.textContent = config.formato(parseFloat(currentValue.toFixed(config.decimal)));
+                    } else {
+                        element.textContent = config.formato(Math.floor(currentValue));
+                    }
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        // Garantir valor final exato
+                        element.textContent = config.formato(config.valor);
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+            }
+
+            // Iniciar animações quando a página carregar
+            function startAnimations() {
+                Object.entries(contadores).forEach(([id, config]) => {
+                    animateCounter(id, config);
+                });
+            }
+
+            // Intersection Observer para reiniciar animações quando visível
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Pequeno delay para garantir que os cards apareçam primeiro
+                        setTimeout(startAnimations, 300);
+                    }
+                });
+            }, observerOptions);
+
+            // Inicialização
+            function init() {
+                const container = document.querySelector('.interlagos-stats-container');
+                if (container) {
+                    observer.observe(container);
+                    // Iniciar imediatamente se já estiver visível
+                    if (container.getBoundingClientRect().top < window.innerHeight) {
+                        setTimeout(startAnimations, 600);
+                    }
+                }
+            }
+
+            // Aguardar DOM carregar
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+        </div>
+       </div>
+       <style>.component-html img {
+	max-width: 100%;
+}</style>
+ </div>
